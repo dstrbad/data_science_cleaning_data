@@ -36,5 +36,5 @@ colnames <- colnames(all_data)
 cleaned_data <- aggregate(x = all_data[, 1:(ncol(all_data)-2)], by = list(subject=gsub("_"," ",all_data$subject), activity=gsub("_", " ", all_data$activity)), FUN = "mean", na.rm = T)
 
 # export data to file(s)
-write.table(cleaned_data, file="cleaned_data.txt")
+write.table(cleaned_data, file="cleaned_data.txt",row.name=FALSE)
 write.csv(cleaned_data, file="cleaned_data.csv")
