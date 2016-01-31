@@ -15,6 +15,6 @@ Cleaning is done with `run_analysis.r` script.
 
 ## Data description (codebook)
 
-Check out [codebook]('codebook.md')
+Check out [codebook](codebook.md)
 
 
